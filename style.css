@@ -1,0 +1,502 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins' ,sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+body{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+section{
+    padding:2rem 9%;
+    
+}
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    color: black;
+
+}
+.heading span{
+    position: relative;
+    z-index: 0;
+    
+}
+
+.btn{
+    display:inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: lightyellow;
+    color: black;
+    font-weight: 500;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: .8rem 3rem;
+
+}
+.btn:hover{
+    background: yellow;
+
+
+}
+.header{
+
+    position: fixed;
+    top: 0; left: 0; right: 0; 
+    z-index: 999;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 9%;
+
+
+}
+.header .logo{
+    font-size: 2.5rem;
+    color:black;
+    font-weight: bolder;
+
+}
+
+.header .logo span{
+    color: yellow;
+}
+.header .navbar a{
+    font-size: 1.1rem;
+    margin:0 1rem;
+    color: black;
+}
+.header .navbar a:hover{
+    color: yellow;
+}
+.header .btn{
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+.header #login-btn i{
+    font-size: 2.5rem;
+    color:#666;
+    cursor: pointer;
+    display: none;
+
+
+
+}
+#menu-btn{
+    font-size: 2.5rem;
+    color:#666;
+    cursor: pointer;
+    display: none;
+}
+.header .active{
+    box-shadow: 0 .5rem 1rem rgba(0,0, 0, .1);
+    padding: 2rem 9%;
+}
+
+.login-form-container{
+    position: fixed;
+    top: 105%; left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255, 255, .9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+
+}
+.login-form-container.active{
+    top: 0;
+    opacity: 1;
+}
+
+.login-form-container form{
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow:0 .5rem 1rem rgba(0,0, 0, .1);
+    background: #fff;
+    border: .1rem solid rgba(0,0, 0, .1);
+    text-align: center;
+    width: 40rem;
+}
+
+.login-form-container form .buttons{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.login-form-container form  .btn{
+    display: block;
+    width: 100%;
+    margin: .5rem 0;
+}
+.login-form-container form h3{
+    color: black;
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+.login-form-container form .box{
+    margin: .7rem 0;
+    width: 100%;
+    text-transform: none;
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem 1.2rem;
+    border: .1rem solid rgba(0,0, 0, .1);
+    border-radius: .5rem;
+}
+.login-form-container form p{
+    font-size: 1.5rem;
+}
+.login-form-container form p a{
+    color: yellow;
+    text-decoration: underline;
+}
+.login-form-container #close-login-form{
+    position: absolute;
+    top: 1.5rem; right: 2.5rem;
+    font-size: 5rem;
+    color: black;
+    cursor: pointer;
+}
+.home{
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+.home h1{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    color: black;
+}
+.home img{
+    width: 100%;
+    margin: 1rem 0;
+
+}
+.vehicles .vehicles-slider{
+    padding-bottom: 5rem;
+}
+.vehicles .vehicles-slider .box{
+    text-align: center;
+    
+
+}
+.vehicles .vehicles-slider .box img{
+    width: 100%;
+   
+
+}
+.vehicles .vehicles-slider .box .content{
+    
+    padding-top: 1rem;
+}
+.vehicles .vehicles-slider .box .content h3{
+    font-size: 2.5rem;
+    color: black;
+}
+.vehicles .vehicles-slider .box .content .price{
+    font-size: 2.5rem;
+    color: yellow;
+    padding: 1rem 0;
+    font-weight: bolder;
+}
+.vehicles .vehicles-slider .box .content .price span{
+    font-size: 1.7rem;
+    color: #666;
+    
+    font-weight: normal;
+}
+.vehicles .vehicles-slider .box .content p{
+    font-size: 1.5rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+    border-top: .1rem solid rgba(0,0, 0, .1); 
+    color: #666;
+}
+.vehicles .vehicles-slider .box .content p span{
+    color: yellow;
+    font-size: .8rem;
+    padding: 0 .5rem;
+}
+.featured .featured-slider{
+    padding: 1rem;
+    padding-bottom: 4rem;
+
+}
+.featured .featured-slider .box{
+    text-align: center;
+    padding: 3rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0, 0, .1); 
+    border: .1rem solid rgba(0,0, 0, .1); 
+    border-radius: .5rem;
+    float: inline-start;
+    
+
+
+}
+.featured .featured-slider .box img{
+    height: 11rem;
+    width: 17rem;
+
+}
+.featured .featured-slider .box:hover img{
+
+    transform: scale(.9);
+    
+}
+.featured .featured-slider .box h3{
+   font-size: 2.2rem;
+   color: black;
+
+    
+}
+.featured .featured-slider .box .stars{
+    padding: 1rem 0;
+
+    
+}
+.featured .featured-slider .box .stars i{
+    font-size: 1.7rem;
+    color: yellow;
+   
+    
+    
+}
+.featured .featured-slider .box .price{
+    font-size: 2.5rem;
+    color: black;
+    
+    
+}
+.newsletter{
+    padding:6rem 2rem;
+    
+    
+    
+}
+.newsletter h3{
+    color: black;
+    font-size: 3rem;
+
+}
+
+.newsletter form{
+    max-width: 60rem;
+    height: 5rem;
+    display: flex;
+    box-shadow:0 .5rem 1rem rgba(0,0, 0, .1);
+    overflow: hidden;
+    border-radius: 5rem;
+}
+.newsletter form input[type="email"]{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: black;
+    padding: 0 2rem;
+    text-transform: none;
+    text-align: center;
+    
+}
+.reviews .reviews-slider{
+    padding-bottom: 3rem;
+
+}
+.reviews .reviews-slider .box{
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+   
+    
+}
+.reviews .reviews-slider .box img{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.reviews .reviews-slider .box .content p{
+    font-size: 1.4rem;
+    color: #666;
+    padding: 1rem 0;
+
+
+}
+.reviews .reviews-slider .box .content h3{
+    font-size: 2.2rem;
+    color: black;
+    
+    
+
+}
+.reviews .reviews-slider .box .content .stars i{
+    font-size: 1.7rem;
+    color: yellow;
+    
+    
+
+}
+.contact .row form{
+    flex: 1 1 42rem;
+    padding: 2rem;
+    border: .1rem solid rgba(0,0, 0, .1);
+    border-radius: 5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0, 0, .1); 
+
+}
+.contact .row form h3{
+    font-size: 3rem;
+    color: black;
+    text-align: center;
+}
+.contact .row form .box{
+    margin: .7rem 0;
+    width: 100%;
+    border: .1rem solid rgba(0,0, 0, .1);
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+
+}
+.contact span{
+    color: yellow;
+}
+footer .box-container {
+    background-color: lightyellow;
+    display: grid;
+    
+    
+    
+}
+footer .box-container  h3{
+    color: black;
+    font-size: 2.2rem;
+    padding: 1rem 0;
+}
+footer .box-container a{
+    display: block;
+    font-size: 1.4rem;
+    color: black;
+    padding: 1rem 0;
+}
+footer .box-container  a i{
+    padding-right: .5rem;
+    color: black;
+}
+footer .box-container a:hover i{
+    padding-right: 2rem;
+    color: yellow;
+}
+footer .credit{
+    text-align: center;
+    padding: 1rem;
+    border-top: #666;
+    padding-top: 2.5rem;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:991px){
+    body{
+        font-size: 55%;
+        
+    }
+    .header{
+        padding: 2rem;
+    }
+    .header .active{
+        padding: 2rem;
+    }
+    section{
+        padding:2rem ;
+        
+    }
+
+    
+}
+@media(max-width:768px){
+    #menu-btn{
+        display: block;
+    }
+    .header #login-btn i{
+        display: block;
+    }
+    .header #login-btn .btn{
+        display: none;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0,0, 0, 1);
+        clip-path: polygon(0 0,100% 0,100% 0,0 0);
+    }
+.header .navbar a{
+    display: block;
+    margin: 2rem;
+    font-size: 2rem;
+}
+}
+@media(max-width:450px){
+    body{
+        font-size: 50%;
+        
+    }
+}
+
+
+

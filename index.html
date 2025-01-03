@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cars For You</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+    <a href="#" class="logo"> <span>Cars</span>foryou</a>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#vehicles">vehicles</a>
+        <a href="#cart">cart</a>
+        <a href="#featured">featured</a>
+        <a href="#reviews">reviews</a>
+        <a href="#contact">contact</a>
+
+    </nav>
+
+    
+
+
+
+
+<div id="login-btn">
+<a href="login.php" class="btn">Login</a>  
+ <i class="far fa-user"></i>
+</div>
+</header>
+
+<section class="home" id="home">
+    <h1 class="home-parallax" >Find your Car</h1>
+    <img  class="home-parallax"  src="cars.png" alt="">
+    <a href="#" class="btn home-parallax" > explore cars</a>
+</section>
+<section class="vehicles" id="vehicles">
+    <h1 class="heading"> popular <span>vehicles</span></h1>
+    <div class="vehicles-slider">
+        <div class="wrapper">
+            <div class="box">
+                <img src="gt.png" alt="">
+                <div class="content">
+                    <h3>Mercedes AMG Gt Black Series</h3>
+                    <div class="price"><span>price:</span>$325,000/-</div>
+                    <p>
+                         new
+                        <span class="fas fa-circle"></span> 2021
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 325 km/h
+                    </p>
+                <a href="cardetails.html" class="btn"> check out</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="m5cs.png" alt="">
+                <div class="content">
+                    <h3>BMW m5cs</h3>
+                    <div class="price"><span>price:</span>$152,000/-</div>
+                    <p>
+                         new
+                        <span class="fas fa-circle"></span> 2022
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 305 km/h
+                    </p>
+                <a href="#" class="btn"> check out</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="911.png" alt="">
+                <div class="content">
+                    <h3>Porsche 911</h3>
+                    <div class="price"><span>price:</span>$211,100/-</div>
+                    <p>
+                         new
+                        <span class="fas fa-circle"></span> 2023
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 320 km/h
+                    </p> 
+                <a href="#" class="btn"> check out</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="audi.png" alt="">
+                <div class="content">
+                    <h3>Audi R8</h3>
+                    <div class="price"><span>price:</span>$253,290/-</div>
+                    <p>
+                         new
+                        <span class="fas fa-circle"></span> 2023
+                        <span class="fas fa-circle"></span> automatic
+                        <span class="fas fa-circle"></span> petrol
+                        <span class="fas fa-circle"></span> 335 km/h
+                    </p>
+                <a href="#" class="btn"> check out</a>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+ 
+</section>
+<h1><b>Please upload images and files of the cars you wish to add to our website and help us expand our collection</b></h1>
+
+<form action="file.php" method="post"
+        enctype="multipart/form-data">
+        Select image to upload
+        <input type="file" name="fileToUpload" id="">
+        <input type="submit" value="Upload Image" name="submit">
+    </form>
+    <h1><b>&nbsp;&nbsp;Choose here the cars you want to add to cart</b></h1>
+  <a href="cars.php" class="btn">Click here</a>
+
+<section class="featured" id="featured">
+    <h1 class="heading">featured Cars</h1>
+    <div class="featured-slider">
+    <div class="wrapper">
+        <div class="box"> 
+            <img src="m4.png" alt="">
+            <h3>M4 2016</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$55,000</div>
+            <a href="#" class="btn">check out</a>
+        </div>
+        <div class="box"> 
+            <img src="c63.png" alt="">
+            <h3>c63s 2018</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$50,000</div>
+            <a href="#" class="btn">check out</a>
+        </div>
+        <div class="box"> 
+            <img src="escallade.png" alt="">
+            <h3>Escalade 2021</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$50,000</div>
+            <a href="#" class="btn">check out</a>
+        </div>
+        <div class="box"> 
+            <img src="hellcat.png" alt="">
+            <h3>Hellcat 2022</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$65,000</div>
+            <a href="#" class="btn">check out</a>
+        </div>
+        <div class="box"> 
+            <img src="gle.png" alt="">
+            <h3>GLE63s 2023</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$80,000</div>
+            <a href="#" class="btn">check out</a>
+        </div>
+        <div class="box"> 
+            <img src="gtr.png" alt="">
+            <h3>GTR 2023</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="price">$75,000</div>
+            <a href="#" class="btn">check out</a>
+        </div>
+       
+        
+    </div>
+</div>
+</section>
+
+<section class="reviews" id="reviews">
+    <h1 class="heading">Clinets <span>review</span></h1>
+    <div class="reviews-slider">
+        <div class="wrapper">
+            <div class="box">
+                <img src="khaled.JPG" alt="">
+                <div class="content">
+                    <p>I don't have money to buy anything here, i'm here just to support the shabeb.</p>
+                    <h3>Khaled Al Khatib</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Roudi.JPG" alt="">
+                <div class="content">
+                    <p>Thanks guys for this great site. My new car is amazing.</p>
+                    <h3>Roudi Dergham</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="moon.jpg" alt="">
+                <div class="content">
+                    <p>No enough rewiews so I had to review myself.</p>
+                    <h3>Mohammed Al Asaad</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="newsletter" >
+    <h3 >subscribe for latest updates</h3>
+    
+    <form action="">
+        <input type="email" placeholder="enter your email!" >
+        <input type="submit" class="subscribe">
+        <img src="MercedesLogo.png" alt="">
+        <img src="BmwLogo.png" alt="">
+        <img src="PorscheLogo.png" alt="">
+        <img src="AudiLogo.png" alt="">
+        
+    </form>
+</section>
+<section id="contact" class="contact">
+    <h1 class="heading"> <span >contact </span>us</h1>
+    <div class="row">
+
+    
+    <form action="">
+        <h3>get in touch</h3>
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="number" placeholder="number" class="box">
+        <textarea name="" id=""placeholder="message" class="box" rows="10" cols="30"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </div>
+    </form>
+
+</section>
+<footer>
+    <div class="box-container">
+        <div class="box1">
+        <h3>our branches</h3>
+        <a href="#"><i class="fas fa-map-marker-alt"></i>Beirut</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i>MajdalAnjar</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i>Zahle</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i>Batroun</a>
+    </div>
+    
+        <div class="box2">
+        <h3>quick links</h3>
+        <a href="#"><i class="fas fa-arrow-right"></i>home</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>vehicles</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>cart</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>featured</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>reviews</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>contact</a>
+
+    </div>
+    <div class="box3">
+        <h3>quick links</h3>
+        <a href="#"><i class="fas fa-phone"></i>+03/406529</a>
+        <a href="#"><i class="fas fa-phone"></i>+71/801825</a>
+        <a href="#"><i class="fas fa-envelope"></i>22231195@students.liu.edu.lb</a>
+        <a href="#"><i class="fas fa-envelope"></i>22231139@students.liu.edu.lb</a>
+        
+        
+
+    </div>
+    <div class="box4">
+        <h3>Our media</h3>
+        <a href="#"><i class="fas fa-arrow-right"></i>twitter</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>instargram</a>
+        <a href="#"><i class="fas fa-arrow-right"></i>youtube</a>
+        
+        
+
+    </div>
+</div>
+
+
+
+    
+
+    
+<div class="credit">created by Mohammad Al Asaad and Hussien Abbass | &copy; all rights reserved! </div>
+</footer>
+
+
+    
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
